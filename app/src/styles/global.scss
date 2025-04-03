@@ -1,0 +1,42 @@
+@use "variables" as *;
+@use "tailwindcss" as *;
+@plugin "@tailwindcss/typography";
+
+// Global styles using SCSS features
+body {
+  font-family: system-ui, sans-serif;
+  color: $text-color;
+  
+  // Nested styles example
+  main {
+    padding: $spacing-md;
+    
+    h1 {
+      margin-bottom: $spacing-md;
+    }
+    
+    p {
+      margin-bottom: $spacing-lg;
+    }
+  }
+}
+
+// Example of a custom component style using SCSS nesting
+.custom-button {
+  background-color: $primary-color;
+  color: white;
+  padding: $spacing-sm $spacing-md;
+  border-radius: 0.25rem;
+  
+  &:hover {
+    background-color: #2563eb; // Darker blue (manually set)
+  }
+  
+  &.secondary {
+    background-color: $secondary-color;
+    
+    &:hover {
+      background-color: #0a766d; // Darker teal (manually set)
+    }
+  }
+}

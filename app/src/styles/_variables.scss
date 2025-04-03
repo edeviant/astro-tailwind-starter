@@ -1,0 +1,17 @@
+// Colors
+$primary-color: #3b82f6;  // blue-600 in Tailwind
+$secondary-color: #0d9488; // teal-600 in Tailwind
+$text-color: #111827;     // gray-900 in Tailwind
+
+// Spacing
+$spacing-base: 1rem;
+$spacing-sm: $spacing-base * 0.5;
+$spacing-md: $spacing-base;
+$spacing-lg: $spacing-base * 1.5;
+$spacing-xl: $spacing-base * 2;
+
+// Breakpoints (matching Tailwind defaults)
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;

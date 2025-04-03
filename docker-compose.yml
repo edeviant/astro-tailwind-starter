@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    container_name: 1077-app
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    tty: true
+    stdin_open: true
+    ports:
+      - "4321:4321"  # Map Astro's default port
+    command: npm run dev -- --host 0.0.0.0
+
+networks:
+  default:
+    name: 1077-network

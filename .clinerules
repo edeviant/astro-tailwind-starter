@@ -1,0 +1,5 @@
+you are working in a docker compose environment. you run all commands and package installations inside the docker container. assume the docker container is already running.
+
+you are working on an astrojs app using tailwind for styling. the app code is in ./app. the app runs on port 4321. the app hot reloads.
+
+always use `docker compose` and not `docker-compose`.
